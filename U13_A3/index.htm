@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile World Station</title>
+
+<style>
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #006400;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.footer {
+  position: center;
+  left: 0;
+  bottom: 0;
+  width: 1500px;
+  height: 150px;
+  background-color: #006400;
+  color: white;
+  text-align: left;
+}
+
+/* container */
+.three-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* columns */
+.three-columns-grid > * {
+    padding:1rem;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: #F1F1F1;
+width: 1500px;
+margin-right: auto;
+margin-left: auto;}
+h1 {font-family: Rubik Mono One; font-size: 80px; color: #006400; text-align: center;}
+h3 {font-family: Rubik Mono One; font-size: 25px; color:  #006400;}
+p  {font-family: Arial; font-size: 15px; color: #000000;}
+a:link {color:  #FFFFFF;}
+a:visited {color: #EEFF46;}
+a:hover {color:  #000000;}
+
+
+</style>
+</head>
+<body>
+
+<img src="images/banner.png" alt="Mobile World Station Banner image">
+
+<div class="header">
+</div>
+
+<div class="topnav">
+<a href="index.htm">Homepage</a> 
+<a href="services.htm">Services</a>
+<a href="samsung.htm">Samsung</a>
+<a href="apple.htm">Apple</a>
+<a href="sony.htm">Sony</a>
+<a href="google.htm">Google</a>
+<a href="accessories.htm">Accessories</a>
+<a href="contact.htm">Contact us</a>
+</div>
+<br>
+
+<script>
+
+/*Current date script credit: 
+JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+</script>
+
+<h1>Welcome to Mobile World Station</h1>
+
+<div class="three-columns-grid">
+
+<div class="column" style="background-color: #F1F1F1;">
+    <h3>Featured Phone</h3>
+    <p>Samsung Galaxy S22 Ultra</p>
+<iframe width="450" height="450" src="https://www.youtube.com/embed/Brrmj9z7QLw" title="Galaxy S22 Ultra: Unveiling | Samsung" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="column" style="background-color: #F1F1F1;">
+    <h3>Featured Sim</h3>
+    <p>Smarty Sim</p>
+<a href="services.htm"><img src="images/smarty.png" alt="Smarty sim image"></a>
+</div>
+
+<div class="column" style="background-color: #F1F1F1;">
+<h3> About us </h3> <br><br>
+<p>Here at Mobile World Station we Provide short yet helpful information about some of our favourite mobile phones, services and accessories.</p><br>
+
+<p>Within our website you will find pages about a number of mobile phone manufacturers such as Samsung, Apple, Sony and Google. Users of our site can aslo see our recommended sim cards from operators of sim sevices such as Smarty, Vodafone, O2 and Three, to complement these phones and services we have a page dedicated to some of our favourite accessories for you to have a gander through.</p><br>
+
+<p>We hope that you will enjoy using our website and that the information provided is of some use to you. If you have any quiries about the mobile phones, services or accessories displayed across the site then please feel free to get in touch via our "Contact Us" page where you will find a feedback form, interactive Google map, as well as our contact details and address</p><br>
+
+<p>Thanks for reading and please enjoy using our website.</p>
+</div>
+</div>
+
+<div class="footer">
+
+  <a href="https://www.uswitch.com/" target="_blank"> <img style="float: right;" src="images/uswitch.png" alt="uswitch logo image"></a>
+
+<p style="padding-left: 20px; padding-top:12px;">
+
+<a href="contact.htm">Contact us</a><br><br>
+
+<a href="https://community.o2.co.uk/" target="_blank"> O2 Community forum </a><br><br>
+
+<a href="https://forum.vodafone.co.uk/t5/Welcome-to-our-Community/ct-p/vodafoneeforum" target="_blank"> Vodafone Community forum </a> 
+
+<address style="padding-left: 20px; padding-top:5px;"> <a href="mailto:MobileWorldStation@Gmail.com">Email: MobileWorldStation@Gmail.com</a> </address>
+</p>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact us</title>
+
+<style>
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #006400;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #006400;
+  color: #EEFF46;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #006400;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.footer {
+  position: center;
+  left: 0;
+  bottom: 0;
+  width: 1500px;
+  height: 150px;
+  background-color: #006400;
+  color: white;
+  text-align: left;
+}
+
+/* container */
+.three-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* columns */
+.three-columns-grid > * {
+    padding:1rem;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: #F1F1F1;
+width: 1500px;
+margin-right: auto;
+margin-left: auto;}
+h1 {font-family: Rubik Mono One; font-size: 80px; color: #006400; text-align: center;}
+h3 {font-family: Rubik Mono One; font-size: 25px; color:  #006400;}
+p  {font-family: Arial; font-size: 15px; color: #000000;}
+a:link {color:  #FFFFFF;}
+a:visited {color: #EEFF46;}
+a:hover {color:  #000000;}
+
+</style>
+</head>
+<body>
+
+<img src="images/banner.png" alt="Mobile World Station Banner image">
+
+<div class="header">
+</div>
+
+<div class="topnav">
+<a href="index.htm">Homepage</a> 
+<a href="services.htm">Services</a>
+<a href="samsung.htm">Samsung</a>
+<a href="apple.htm">Apple</a>
+<a href="sony.htm">Sony</a>
+<a href="google.htm">Google</a>
+<a href="accessories.htm">Accessories</a>
+<a href="contact.htm">Contact us</a>
+</div>
+<br>
+
+<h1>Contact us</h1>
+
+<div class="three-columns-grid">
+
+
+<div class="column" style="background-color: #F1F1F1;">
+<h3>Contact form</h3>
+    <div class="container">
+  <form action="mailto:MobileWorldStation@Gmail.com" method="post" enctype="text/plain">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="united kingdom">United Kingdom</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Query</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+
+<div class="column" style="background-color: #F1F1F1;">
+    <h3>Contact information</h3><br>  
+<p>Address:<br><br>
+Mobile World Station<br><br>
+Bristol Road South<br><br>
+Northfield, Birmingham<br><br>
+B31 2NN<br><br><br><br><br>
+
+Find us on X @MobileWorldStation<br><br><br>
+Contact Number: 0790000000<br><br><br>
+Email Address: MobileWorldStation@Gmail.com</p>
+</div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d304.18708430575504!2d-1.970440588246783!3d52.4157977703154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bfae463ba127%3A0xd5bd87e6077dec55!2sMobile%20World%20Station!5e0!3m2!1sen!2suk!4v1700835354179!5m2!1sen!2suk" width="1500" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+<div class="footer">
+
+  <a href="https://www.uswitch.com/" target="_blank"> <img style="float: right;" src="images/uswitch.png" alt="uswitch logo image"></a>
+
+<p style="padding-left: 20px; padding-top:12px;">
+
+<a href="contact.htm">Contact us</a><br><br>
+
+<a href="https://community.o2.co.uk/" target="_blank"> O2 Community forum </a><br><br>
+
+<a href="https://forum.vodafone.co.uk/t5/Welcome-to-our-Community/ct-p/vodafoneeforum" target="_blank"> Vodafone Community forum </a> 
+
+<address style="padding-left: 20px; padding-top:5px;"> <a href="mailto:MobileWorldStation@Gmail.com">Email: MobileWorldStation@Gmail.com</a> </address>
+</p>
+</div>
+
+</body>
+</html>
