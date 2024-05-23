@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timothy Backhouse</title>
+
+<style>
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #5DACDE;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.footer {
+  position: center;
+  left: 0;
+  bottom: 0;
+  width: 1500px;
+  height: 150px;
+  background-color: #5DACDE;
+  color: white;
+  text-align: left;
+}
+
+/* container */
+.three-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* columns */
+.three-columns-grid > * {
+    padding:1rem;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: #F1F1F1;
+width: 1500px;
+margin-right: auto;
+margin-left: auto;}
+h1 {font-family: Rubik Mono One; font-size: 80px; color: #5DACDE; text-align: center;}
+h3 {font-family: Rubik Mono One; font-size: 25px; color:  #5DACDE;}
+p  {font-family: Arial; font-size: 15px; color: #000000;}
+a:link {color:  #FFFFFF;}
+a:visited {color: #EEFF46;}
+a:hover {color:  #000000;}
+
+
+</style>
+</head>
+<body>
+
+<img src="images/banner.png" alt="Mobile World Station Banner image">
+
+<div class="header">
+</div>
+
+<div class="topnav">
+<a href="index.htm">Homepage</a> 
+<a href="u1.htm">Unit 1</a>
+<a href="u2.htm">Unit 2</a>
+<a href="u8.htm">Unit 8</a>
+<a href="u13.htm">Unit 13</a>
+<a href="u14.htm">Unit 14</a>
+</div>
+<br>
+
+<script>
+
+/*Current date script credit: 
+JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+</script>
+
+<h1>Welcome to the digital portfolio of Timothy Backhouse</h1>
+
+<div class="three-columns-grid">
+
+<div class="column" style="background-color: #F1F1F1;">
+    <h3>Unit 8 Alphabet App</h3>
+    <p>Here is a video going through all the screens of my Alphabet App that I developed for Unit 8. More can be learned about Unit 8 and this application on the Unit 8 Section page.</p>
+<video width="450" height="450" controls autoplay>
+  <source src="videos/TJB_Alphabet_App.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="column" style="background-color: #F1F1F1;">
+    <h3>Mr Timothy Backhouse</h3>
+    <p>Tim Backhouse ICT student of Coleg Cambria Deeside</p>
+<a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/tjb.png" alt="Image of a top student"></a>
+<a href="https://www.cambria.ac.uk/our-courses/detail/?ucd=133737" target="_blank"><img src="images/cambria.png" alt="Coleg Cambria logo image"></a>
+</div>
+
+<div class="column" style="background-color: #F1F1F1;">
+<h3> About me and ICT </h3> <br><br>
+<p> During the past year I have embarked on completeing a Btec Level 2 Extended Certificicate in Information and Creative Technology. Completion of this course has seen me complete a number of Units which included Unit 1, Unit 2, Unit 8, Unit 13, Unit 14, Unit 15 and Unit 19. More details of these Units can be seen on the section pages of this digital portfolio website.</p><br><br>
+
+<p>I have enjoyed my year at Coleg Cambria studying ICT, and hope to now be progessing on to Level 3 next year</p><br><br>
+
+<p>Thanks for reading and please enjoy using my digital portfolio.</p>
+</div>
+</div>
+
+<div class="footer">
+
+  <a href="https://qualifications.pearson.com/en/about-us/qualification-brands/btec.html" target="_blank"> <img style="float: right;" src="images/btec.png" alt="uswitch logo image"></a>
+
+<p style="padding-left: 20px; padding-top:12px;">
+
+<a href="https://qualifications.pearson.com/en/about-us/qualification-brands/btec.html" target="_blank">Btec </a><br><br>
+
+<a href="https://www.linkedin.com/feed/" target="_blank">Linked In</a><br><br>
+
+<a href="https://www.cambria.ac.uk/our-courses/detail/?ucd=133737" target="_blank"> Coleg Cambria </a> 
+
+<address style="padding-left: 20px; padding-top:5px;"> <a href="mailto:22092427@cambria.ac.uk">Email: 22092427@cambria.ac.uk </a> </address>
+</p>
+</div>
+
+
+</body>
+</html>
